@@ -4,8 +4,8 @@ import java.awt.Point;
 /**
  * This class maintains information for drawing a Rectangle and extends Polygon.
  * 
- * @author Stephen
- * @version 2018-04-02
+ * @author Stephen and Matt Edgar
+ * @version 2018-11-15
  * Lab 11
  */
 public class Rectangle extends Polygon
