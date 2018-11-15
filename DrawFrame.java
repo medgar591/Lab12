@@ -45,9 +45,13 @@ public class DrawFrame extends JFrame
 
         RightTriangle rightEarOuter = new RightTriangle(new Point(575, 220), -100, -200, Color.ORANGE, true);
         RightTriangle rightEarInner = new RightTriangle(new Point(570, 220), -75, -175, Color.GRAY, true);
-        
-        // Eyes:
 
+        // Eyes:
+        Oval leftEye = new Oval(new Point(300, 300), 50, 100, Color.WHITE, true);
+        Oval leftPupil = new Oval(new Point(300, 300), 30, 60, Color.BLACK, true);
+
+        Oval rightEye = new Oval(new Point(500, 300), 50, 100, Color.WHITE, true);
+        Oval rightPupil = new Oval(new Point(500, 300), 30, 60, Color.BLACK, true);
         // Nose and Whiskers:
 
         // Collar:
@@ -59,10 +63,17 @@ public class DrawFrame extends JFrame
 
         // TODO: add shapes to the panel:
         drawPanel.addShape(base);
+        
         drawPanel.addShape(leftEarOuter);
         drawPanel.addShape(leftEarInner);
         drawPanel.addShape(rightEarOuter);
         drawPanel.addShape(rightEarInner);
+        
+        drawPanel.addShape(leftEye);
+        drawPanel.addShape(rightEye);
+        drawPanel.addShape(leftPupil);
+        drawPanel.addShape(rightPupil);
+        
 
         // set background color
         drawPanel.setBackground(Color.YELLOW);
