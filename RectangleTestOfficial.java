@@ -13,10 +13,10 @@ import org.junit.Test;
 public class RectangleTestOfficial
 {
     private static Rectangle r1 = new Rectangle(new Point(100, 100), 100, 50, Color.BLACK, true);
-    private static Point r1UL = new Point(50, 50);
-    private static Point r1LL = new Point(150, 50);
-    private static Point r1UR = new Point(50, 100);
-    private static Point r1LR = new Point(150, 100);
+    private static Point r1UL = new Point(50, 75);
+    private static Point r1LL = new Point(50, 125);
+    private static Point r1UR = new Point(150, 75);
+    private static Point r1LR = new Point(150, 125);
     private static Rectangle r2 = new Rectangle(new Point(150, 150), 25, 25, Color.CYAN, false);
     private static Point r2UL = new Point(138, 138);
     private static Point r2LL = new Point(162, 138);
