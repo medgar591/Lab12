@@ -28,7 +28,7 @@ public class PolyLineTest
         Point[] pts = pl1.getLocation();
         Assert.assertEquals(4, pts.length);
     }
-    
+
     /**
      * plectangle construction: points
      */
@@ -36,34 +36,42 @@ public class PolyLineTest
     public void testPolyLineConstructorCalculatedPoints()
     {
         Point[] pts1 = pl1.getLocation();
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts1, pl1UL));
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts1, pl1LL));
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts1, pl1LR));
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts1, pl1UR));
-        
+
         Point[] pts2 = pl2.getLocation();
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts2, pl2UL));
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts2, pl2LL));
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts2, pl2LR));
-        Assert.assertTrue("Expected point not appearing in PolyLine. Make sure that the points determine the base line "
-                + "and that the thickness determines the parallel line (ad to y).",
+        Assert.assertTrue(
+                "Expected point not appearing in PolyLine. Make sure that the points determine the base line "
+                        + "and that the thickness determines the parallel line (ad to y).",
                 ShapeUtils.pointInSet(pts2, pl2UR));
     }
-    
+
     /**
      * Unfilled constructor
      */
@@ -72,7 +80,7 @@ public class PolyLineTest
     {
         Assert.assertFalse("PolyLine fill incorrect.", pl2.isFilled());
     }
-    
+
     /**
      * Filled constructor
      */
@@ -81,7 +89,7 @@ public class PolyLineTest
     {
         Assert.assertTrue("PolyLine fill incorrect.", pl1.isFilled());
     }
-    
+
     /**
      * Color constructor
      */
