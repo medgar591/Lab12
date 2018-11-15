@@ -40,7 +40,7 @@ public class PolyLine extends Polygon
         super(color, filled);
         Point pointBL = new Point(pointUL.x, pointUL.y + thickness);
         Point pointBR = new Point(pointUR.x, pointUR.y + thickness);
-        
+
         this.location = new Point[4];
         this.location[0] = pointUL;
         this.location[1] = pointUR;
