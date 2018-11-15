@@ -40,7 +40,6 @@ public class DrawPanel extends JPanel
     {
         super.paintComponent(graphics);
 
-        // TODO: for all shapes in the list, draw the shape.
         for (Shape s : shapeList)
         {
             s.draw(graphics);
