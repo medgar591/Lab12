@@ -9,5 +9,11 @@ import java.awt.Graphics;
  */
 public interface Drawable
 {
+    /**
+     * Method for drawing a drawable object
+     * 
+     * @param g
+     *            The graphics object to draw the object
+     */
     public void draw(Graphics g);
 }
