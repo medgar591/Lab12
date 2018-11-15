@@ -8,7 +8,7 @@ import java.awt.Point;
  * @version 15-11-2018
  *
  */
-public class Shape
+public abstract class Shape implements Drawable
 {
     /** Point representing the location of the shape */
     protected Point[] location;
