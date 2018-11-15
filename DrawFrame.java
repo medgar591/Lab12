@@ -52,10 +52,12 @@ public class DrawFrame extends JFrame
 
         Oval rightEye = new Oval(new Point(500, 300), 50, 100, Color.WHITE, true);
         Oval rightPupil = new Oval(new Point(500, 300), 30, 60, Color.BLACK, true);
-        // Nose and Whiskers:
+
+        // Nose:
+        Circle nose = new Circle(new Point(400, 350), 40, Color.BLACK, true);
 
         // Collar:
-
+        Oval collar = new Oval(new Point(400, 500), 250, 50, Color.GREEN, true);
         // Square around the dog:
 
         // initialize the panel and add the shapes to it
@@ -63,18 +65,20 @@ public class DrawFrame extends JFrame
 
         // TODO: add shapes to the panel:
         drawPanel.addShape(base);
-        
+
         drawPanel.addShape(leftEarOuter);
         drawPanel.addShape(leftEarInner);
         drawPanel.addShape(rightEarOuter);
         drawPanel.addShape(rightEarInner);
-        
+
         drawPanel.addShape(leftEye);
         drawPanel.addShape(rightEye);
         drawPanel.addShape(leftPupil);
         drawPanel.addShape(rightPupil);
-        
 
+        drawPanel.addShape(nose);
+
+        drawPanel.addShape(collar);
         // set background color
         drawPanel.setBackground(Color.YELLOW);
 
