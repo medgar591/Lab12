@@ -7,8 +7,8 @@ import org.junit.Test;
 /**
  * Test cases for the Oval and the Circle
  * 
- * @author Stephen
- * @version 2018-04-02 Lab 11
+ * @author Stephen and Matt Edgar
+ * @version 2018-11-15
  */
 public class OvalTestOfficial
 {
@@ -32,7 +32,6 @@ public class OvalTestOfficial
         Assert.assertEquals("Quantity of points defining the Circle is more than 1", 1, c2.getLocation().length);
 
         // Verify the location for each shape
-        // TODO: implement this.
         Assert.assertEquals("Error in location", new Point(100, 100), o1.getLocation()[0]);
         Assert.assertEquals("Error in location", new Point(100, 100), o2.getLocation()[0]);
         Assert.assertEquals("Error in location", new Point(200, 300), c1.getLocation()[0]);
@@ -65,7 +64,6 @@ public class OvalTestOfficial
         Assert.assertEquals("Incorrect diameter2 for the Circle", 75, c2.getDiameter2());
     }
 
-    // TODO: test color and fill in constructor.
     /**
      * Testing colors
      */
