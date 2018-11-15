@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+
 /**
  * Interface for describing drawable objects
  * 
@@ -7,5 +9,5 @@
  */
 public interface Drawable
 {
-
+    public void draw(Graphics g);
 }
