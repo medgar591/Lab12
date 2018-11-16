@@ -34,8 +34,6 @@ public class DrawFrame extends JFrame
         int width = 800;
         int height = 600;
 
-        // TODO: draw a dog:
-
         // Base head:
         Circle base = new Circle(new Point(400, 300), 400, Color.ORANGE, true);
 
@@ -67,12 +65,17 @@ public class DrawFrame extends JFrame
         Oval tongue = new Oval(new Point(440, 450), 50, 75, Color.RED, true);
 
         // Square and circle around the dog:
+        Circle backCircle = new Circle(new Point(400, 300), 600, Color.BLACK, false);
+        Square backSquare = new Square(new Point(400, 300), 425, Color.BLACK, false);
 
         // initialize the panel and add the shapes to it
         drawPanel = new DrawPanel();
 
         // TODO: add shapes to the panel:
         drawPanel.addShape(base);
+
+        drawPanel.addShape(backSquare);
+        drawPanel.addShape(backCircle);
 
         drawPanel.addShape(leftEarOuter);
         drawPanel.addShape(leftEarInner);
