@@ -31,7 +31,7 @@ public class Rectangle extends Polygon
         this.location = new Point[4];
         this.location[0] = upperRight;
         this.location[1] = lowerRight;
-        this.location[2] = upperLeft;
-        this.location[3] = lowerLeft;
+        this.location[3] = upperLeft;
+        this.location[2] = lowerLeft;
     }
 }
