@@ -61,7 +61,12 @@ public class DrawFrame extends JFrame
         Circle tag = new Circle(new Point(400, 520), 60, Color.DARK_GRAY, true);
         Circle tagDetail = new Circle(new Point(400, 520), 40, Color.WHITE, false);
 
-        // Square around the dog:
+        // Mouth and Tongue:
+        PolyLine mouthLeft = new PolyLine(new Point(275, 375), new Point(400, 400), 50, Color.BLACK, true);
+        PolyLine mouthRight = new PolyLine(new Point(525, 375), new Point(400, 400), 50, Color.BLACK, true);
+        Oval tongue = new Oval(new Point(440, 450), 50, 75, Color.RED, true);
+
+        // Square and circle around the dog:
 
         // initialize the panel and add the shapes to it
         drawPanel = new DrawPanel();
@@ -84,6 +89,10 @@ public class DrawFrame extends JFrame
         drawPanel.addShape(collar);
         drawPanel.addShape(tag);
         drawPanel.addShape(tagDetail);
+
+        drawPanel.addShape(mouthRight);
+        drawPanel.addShape(mouthLeft);
+        drawPanel.addShape(tongue);
 
         // set background color
         drawPanel.setBackground(Color.YELLOW);
