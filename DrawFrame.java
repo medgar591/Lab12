@@ -58,6 +58,9 @@ public class DrawFrame extends JFrame
 
         // Collar:
         Oval collar = new Oval(new Point(400, 500), 250, 50, Color.GREEN, true);
+        Circle tag = new Circle(new Point(400, 520), 60, Color.DARK_GRAY, true);
+        Circle tagDetail = new Circle(new Point(400, 520), 40, Color.WHITE, false);
+
         // Square around the dog:
 
         // initialize the panel and add the shapes to it
@@ -79,6 +82,9 @@ public class DrawFrame extends JFrame
         drawPanel.addShape(nose);
 
         drawPanel.addShape(collar);
+        drawPanel.addShape(tag);
+        drawPanel.addShape(tagDetail);
+
         // set background color
         drawPanel.setBackground(Color.YELLOW);
 
